@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice System Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <button id="toggle-sidebar" class="toggle-sidebar">☰</button>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2>Invoice System</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html">Dashboard</a></li>
+                <li class="submenu">
+                    <a href="#" id="invoices">Invoices</a>
+                    <ul class="submenu-items" id="submenu-invoices">
+                        <li><a href="createinvoice.html">Create Invoice</a></li>
+                        <li><a href="manageinvoice.html">Manage Invoice</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="customer.html">Customers</a></li>
+            </ul>
+            <a href="loginpage.html" class="btn11">
+                <span class="glyphicon glyphicon-log-out"></span> Log out
+              
+              <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i></a>
+        </nav>
+        <main class="main-content">
+            <div class="container1">
+                <h1 class="con">Product List</h1>
+                <div class="container1-2">
+                <div class="invoice-controls">
+                    <div class="show-entries">
+                        <label for="show-entries">Show</label>
+                        <select name="show-entries" id="show-entries">
+                            <option value="10">10</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                        </select>
+                        <label for="entries">entries</label>
+                    </div>
+                    <div class="search">
+                        <label for="search">Search:</label>
+                        <input type="text" name="search" id="search" placeholder="Search invoices">
+                    </div>
+                </div>
+                <div class="invoice-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Product 1</td>
+                                <td>This is a sample product 1</td>
+                                <td>$ 15</td>
+                            </tr>
+                            <tr>
+                                <td>Product 2</td>
+                                <td>This is a sample product 2</td>
+                                <td>$ 10</td>
+                            </tr>
+                            <tr>
+                                <td>Product 3</td>
+                                <td>This is a sample product 3</td>
+                                <td>$ 12</td>
+                            </tr>
+                            <tr>
+                                <td>Product 4</td>
+                                <td>This is a sample product 4</td>
+                                <td>$ 20</td>
+                            </tr>
+                            <tr>
+                                <td>Product 5</td>
+                                <td>This is a sample product 5</td>
+                                <td>$ 22</td>
+                            </tr>
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <p>Showing 1 to 5 of 5 entries</p>
+                    <div class="page-nav">
+                        <a href="#" class="disabled">Previous</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">Next</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
